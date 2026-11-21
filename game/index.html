@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Reading Room — Spot the Difference</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <h1>The Reading Room</h1>
+    <p class="tagline">A spot-the-difference hunt. Ten quiet changes hide between the two pictures — find them all.</p>
+  </header>
+
+  <section class="hud" aria-label="Game status">
+    <div class="hud-counter">
+      <span id="left-count">10</span>
+      <span class="hud-counter-label">differences left</span>
+    </div>
+    <div class="hud-stat">Found <strong id="found-count">0 / 10</strong></div>
+    <div class="hud-stat">Time <strong id="time-readout">0:00</strong></div>
+    <div class="hud-stat">Mistakes <strong id="mistake-count">0</strong></div>
+    <div class="hud-actions">
+      <button id="hint-button" type="button">Hint <span class="key-hint">H</span></button>
+      <button id="restart-button" type="button">Restart <span class="key-hint">R</span></button>
+    </div>
+  </section>
+
+  <p id="toast" class="toast" role="status">Click a difference in either picture to ring it.</p>
+
+  <main class="stage" id="stage">
+    <figure class="panel">
+      <canvas id="picture-a" width="1120" height="840"></canvas>
+      <figcaption>Picture A</figcaption>
+    </figure>
+    <figure class="panel">
+      <canvas id="picture-b" width="1120" height="840"></canvas>
+      <figcaption>Picture B</figcaption>
+    </figure>
+
+    <div class="win-card" id="win-card" hidden>
+      <h2>You found them all!</h2>
+      <p>Time <strong id="win-time">0:00</strong> · Mistakes <strong id="win-mistakes">0</strong></p>
+      <button id="play-again-button" type="button">Play again</button>
+    </div>
+  </main>
+
+  <footer class="instructions">
+    Click a difference in either picture and it is ringed in both. A wrong click adds 5 seconds,
+    a hint adds 10. Keys: <strong>H</strong> hint · <strong>R</strong> restart.
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

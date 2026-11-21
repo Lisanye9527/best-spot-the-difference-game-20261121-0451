@@ -1,0 +1,180 @@
+/* The Reading Room — page styling. Warm paper tones to match the scene. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 18px 20px 26px;
+  background: #f3e9d7;
+  color: #3d2b1f;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.masthead {
+  text-align: center;
+}
+
+.masthead h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #7c3f2c;
+}
+
+.tagline {
+  margin: 6px 0 0;
+  font-size: 16px;
+  color: #6d5744;
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  max-width: 1216px;
+  margin: 16px auto 0;
+  padding: 10px 18px;
+  background: #fffaf0;
+  border: 2px solid #d9c39a;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(90, 55, 30, 0.12);
+}
+
+.hud-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: #b3541e;
+}
+
+#left-count {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.hud-counter-label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hud-stat {
+  font-size: 16px;
+  color: #6d5744;
+}
+
+.hud-stat strong {
+  color: #3d2b1f;
+  font-size: 19px;
+}
+
+.hud-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  font: inherit;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 2px solid #7c4f2e;
+  border-radius: 10px;
+  background: #f6b73c;
+  color: #4a3428;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffc95e;
+}
+
+.key-hint {
+  font-size: 12px;
+  padding: 1px 6px;
+  border: 1px solid rgba(74, 52, 40, 0.5);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.toast {
+  max-width: 1216px;
+  margin: 10px auto 0;
+  min-height: 22px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  color: #7c3f2c;
+}
+
+.stage {
+  position: relative;
+  display: flex;
+  gap: 22px;
+  max-width: 1216px;
+  margin: 8px auto 0;
+}
+
+.panel {
+  flex: 1;
+  margin: 0;
+  padding: 10px;
+  background: #fffaf0;
+  border: 2px solid #d9c39a;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(90, 55, 30, 0.15);
+}
+
+.panel canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: crosshair;
+}
+
+.panel figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #6d5744;
+}
+
+.win-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 26px 40px;
+  text-align: center;
+  background: rgba(255, 250, 240, 0.97);
+  border: 3px solid #b3541e;
+  border-radius: 18px;
+  box-shadow: 0 10px 34px rgba(60, 35, 20, 0.35);
+}
+
+.win-card h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #7c3f2c;
+}
+
+.win-card p {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.instructions {
+  max-width: 1216px;
+  margin: 14px auto 0;
+  text-align: center;
+  font-size: 14.5px;
+  color: #6d5744;
+}
